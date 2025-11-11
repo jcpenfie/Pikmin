@@ -22,12 +22,10 @@ class MyAdapter(
         return characterList.size
     }
 
+    // Para el grid
     inner class MyViewHolder (private val binding: CharacterItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bin (character: CharacterPikmin){
             binding.chracterName.text = character.name
-
-            // binding.card.setBackgroundColor(character.color.toColorInt())
-
             binding.characterImage.setImageResource(character.getImage())
 
             binding.root.setOnClickListener {

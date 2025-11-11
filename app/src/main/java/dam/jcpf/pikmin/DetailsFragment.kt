@@ -1,5 +1,6 @@
 package dam.jcpf.pikmin
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -20,11 +21,13 @@ class DetailsFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.title.text = arguments?.getString("name")
-        binding.description.text = arguments?.getString("description")
         binding.image.setImageResource(arguments?.getInt("image")!!)
+        binding.type.text = "Pikmin ${arguments?.getString("type")}"
+        binding.description.text = arguments?.getString("description")
+        binding.skills.text = arguments?.getString("skills")
     }
 }

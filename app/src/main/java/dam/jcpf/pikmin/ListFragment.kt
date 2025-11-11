@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dam.jcpf.pikmin.databinding.FragmentListBinding
@@ -31,9 +30,10 @@ class ListFragment : Fragment() {
         binding.pikminRecyclerview.adapter =
             MyAdapter(loadCharacterFromJson()) { seletedCharacter ->
                 val bundle = Bundle()
-                bundle.putString("name", seletedCharacter.name)
-                bundle.putString("description", seletedCharacter.description)
                 bundle.putInt("image", seletedCharacter.getImage())
+                bundle.putString("type", seletedCharacter.type)
+                bundle.putString("description", seletedCharacter.description)
+                bundle.putString("skills", seletedCharacter.skills)
                 findNavController().navigate(R.id.detailsFragment, bundle)
             }
     }
