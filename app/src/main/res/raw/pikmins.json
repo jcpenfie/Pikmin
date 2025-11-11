@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Pikmin rojo",
+    "description": "Los Pikmin rojos se caracterizan por su cuerpo de color escarlata y nariz puntiaguda. Además de los rasgos vegetales propios de su especie, presentan características animales como un fuerte espíritu combativo y un grado elevado de curiosidad. Tienen una gran capacidad de adaptación, pues no solo son resistentes al calor extremo, sino que también suelen habitar en una gran variedad de ecosistemas.",
+    "type": "rojo",
+    "skills": ["Inmunidad al fuego", "Alta capacidad ofensiva"]
+  },
+  {
+    "name": "Pikmin amarillo",
+    "description": "Este tipo de Pikmin se caracteriza por su cuerpo de color amarillo y un par de lamelas semejantes a orejas que les permiten cavar con rapidez y alcanzar grandes alturas al ser lanzados. Otro rasgo que los distingue es la capacidad de sus cuerpos de conducir la electricidad. Además no solo son resistentes a ella, sino que parecen disfrutarla.",
+    "type": "amarillo",
+    "skills": ["Resistencia a la electricidad", "Capacidad de vuelo elevado", "Excelentes cavadores"]
+  },
+  {
+    "name": "Pikmin azul",
+    "description": "Los Pikmin azules se caracterizan por su cuerpo de color azul y expresión facial indescifrable. A diferencia de la mayoría de las especies radiambulares, que no pueden respirar bajo el agua, los Pikmin azules cuentan con branquias que se confunden con una boca. Esas branquias les permiten sobrevivir en ecosistemas acuáticos y terrestres.",
+    "type": "azul",
+    "skills": ["Respiración bajo el agua", "Excelentes nadadores"]
+  },
+  {
+    "name": "Pikmin blanco",
+    "description": "Los Pikmin blancos se caracterizan por su cuerpo de color blanco y ojos rojos. Sus pequeños cuerpos segregan un potente veneno, lo que a su vez los hace inmunes a ciertos venenos. Las semillas de Pikmin blancos se pueden obtener por medio de brotes rebotadores marfil que solo crecen en regiones subterráneas.",
+    "type": "blanco",
+    "skills": ["Inmunidad al veneno","Cuerpos venenosos", "Velocidad"]
+  },
+  {
+    "name": "Pikmin morado",
+    "description": "Los Pikmin morados se caracterizan por su cuerpo robusto y resistente. Son más fuertes y grandes que el resto de su especie. Pesan 10 veces más que cualquier otro Pikmin. Al igual que los Pikmin blancos, solo pueden nacer a partir de brotes rebotadores que solo se encuentran en regiones subterráneas, por lo que son considerados una especie única.",
+    "type": "morado",
+    "skills": ["Peso", "Gran capacidad de carga", "Nacen en el subsuelo"]
+  },
+  {
+    "name": "Pikmin pétreo",
+    "description": "Los Pikmin pétreos son un tipo de Pikmin parasitario llamado \"Ermikmin\" que toma como huésped una piedra y, de manera similar a una semilla que echa raíces a través de las grietas de una roca, las raíces del Pikmin penetran la piedra.",
+    "type": "pétreo",
+    "skills": ["Inquebrantables", "Robustos", "No adherentes"]
+  },
+  {
+    "name": "Pikmin alado",
+    "description": "Los Pikmin alados se caracterizan por su cuerpo de color rosa y prominentes ojos azules que parecen lentes. Se desplazan ágilmente por los aires con sus alas, pero sus ataques no causan mucho daño.",
+    "type": "alado",
+    "skills": ["Capacidad de vuelo", "Ataques débiles"]
+  },
+  {
+    "name": "Pikmin gélido",
+    "description": "Los Pikmin gélidos pertenecen a un subtipo parasitario de Pikmin llamado \"Ermikmin\". Obtienen y mantienen su cuerpo a través de un proceso que utiliza su núcleo de baja temperatura para generar constantemente hielo nuevo de la humedad del ambiente.",
+    "type": "gélido",
+    "skills": ["Propiedades de congelamiento", "Inmunidad al frío"]
+  },
+  {
+    "name": "Pikmin luminoso",
+    "description": "Los Pikmin luminosos se caracterizan por su cuerpo de color verde radiante. Al florecer la hoja que tienen en la cabeza, esta toma una forma de estrella. Tienen varias características que los distinguen de los otros tipos de Pikmin, una de ellas es que en vez de brotar de cebollas brotan de lumilomas que solo se encuentran en la noche y en regiones subterráneas.",
+    "type": "luminoso",
+    "skills": ["¿Sí son Pikmin?", "Actividad nocturna y en regiones subterráneas", "Comportamiento inusual"]
+  }
+]
