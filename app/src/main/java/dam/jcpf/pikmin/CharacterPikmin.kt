@@ -30,15 +30,15 @@ data class CharacterPikmin(
 
     fun getImage(): Int {
         return when (name) {
-            "Pikmin rojo" -> R.drawable.redPikmin
-            "Pikmin amarillo" -> R.drawable.yellowPikmin
-            "Pikmin azul" -> R.drawable.bluePikmin
-            "Pikmin blanco" -> R.drawable.whitePikmin
-            "Pikmin morado" -> R.drawable.purplePikmin
-            "Pikmin pétreo" -> R.drawable.rockPikmin
-            "Pikmin alado" -> R.drawable.wingedPikmin
-            "Pikmin gélido" -> R.drawable.icePikmin
-            else -> R.drawable.glowPikmin
+            "Pikmin rojo" -> R.drawable.red
+            "Pikmin amarillo" -> R.drawable.yellow
+            "Pikmin azul" -> R.drawable.blue
+            "Pikmin blanco" -> R.drawable.white
+            "Pikmin morado" -> R.drawable.purple
+            "Pikmin pétreo" -> R.drawable.rock
+            "Pikmin alado" -> R.drawable.winged
+            "Pikmin gélido" -> R.drawable.ice
+            else -> R.drawable.glow
 
         }
     }
