@@ -9,7 +9,7 @@
     "name": "Pikmin amarillo",
     "description": "Este tipo de Pikmin se caracteriza por su cuerpo de color amarillo y un par de lamelas semejantes a orejas que les permiten cavar con rapidez y alcanzar grandes alturas al ser lanzados. Otro rasgo que los distingue es la capacidad de sus cuerpos de conducir la electricidad. Además no solo son resistentes a ella, sino que parecen disfrutarla.",
     "type": "Amarillo",
-    "skills": "\"Resistencia a la electricidad\", \"Capacidad de vuelo elevado\", \"Excelentes cavadores\""
+    "skills": "Resistencia a la electricidad, Capacidad de vuelo elevado, Excelentes cavadores"
   },
   {
     "name": "Pikmin azul",
@@ -51,6 +51,6 @@
     "name": "Pikmin luminoso",
     "description": "Los Pikmin luminosos se caracterizan por su cuerpo de color verde radiante. Al florecer la hoja que tienen en la cabeza, esta toma una forma de estrella. Tienen varias características que los distinguen de los otros tipos de Pikmin, una de ellas es que en vez de brotar de cebollas brotan de lumilomas que solo se encuentran en la noche y en regiones subterráneas.",
     "type": "Luminoso",
-    "skills": "¿Sí son Pikmin?, Actividad nocturna y en regiones subterráneas, Comportamiento inusual"
+    "skills": "Actividad nocturna y en regiones subterráneas, Comportamiento inusual"
   }
 ]
