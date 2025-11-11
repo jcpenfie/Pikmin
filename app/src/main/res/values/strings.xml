@@ -6,4 +6,5 @@
     <string name="pikmin_name">Pikmin Name</string>
     <string name="details_fragment">Details Fragment</string>
     <string name="descripcion">Description</string>
+    <string name="toolbar">Toolbar</string>
 </resources>
