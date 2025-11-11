@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dam.jcpf.pikmin.databinding.FragmentListBinding
@@ -29,6 +31,9 @@ class ListFragment : Fragment() {
         binding.pikminRecyclerview.layoutManager = GridLayoutManager(requireContext(), 3)
         binding.pikminRecyclerview.adapter =
             MyAdapter(loadCharacterFromJson()) { seletedCharacter ->
+                // Toast para cuando se selecciona un pikmin
+                Toast.makeText(requireContext(), "Se ha seleccionado el Pikmin ${seletedCharacter.type}", Toast.LENGTH_SHORT).show()
+
                 val bundle = Bundle()
                 bundle.putInt("image", seletedCharacter.getImage())
                 bundle.putString("type", seletedCharacter.type)
