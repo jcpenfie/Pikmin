@@ -12,4 +12,17 @@
     <string name="title_skills">Habilidades</string>
     <string name="acerca_de">Acerca de…</string>
     <string name="ajustes">Ajustes</string>
+    <string name="acerca_de_message">Aplicación desarrollada por Juan Carlos Peña Fierro. Versión 1.0.</string>
+    <string name="welcome">¡Bienvenidos al mundo Pikmin!</string>
+    <string name="pikminSelected">Se ha seleccionado el Pikmin</string>
+    <string name="detailTitle">Detalle Pikmin</string>
+    <string name="pikminRojo">Pikmin Rojo</string>
+    <string name="pikminAmarillo">Pikmin Amarillo</string>
+    <string name="pikminAzul">Pikmin Azul</string>
+    <string name="pikminBlanco">Pikmin Blanco</string>
+    <string name="pikminMorado">Pikmin Morado</string>
+    <string name="pikminRock">Pikmin pétreo</string>
+    <string name="pikminWing">Pikmin alado</string>
+    <string name="pikminIce">Pikmin gélido</string>
+    <string name="pikminGlow">Pikmin Luminoso</string>
 </resources>

@@ -18,7 +18,6 @@ data class CharacterPikmin(
             "Pikmin alado" -> R.drawable.winged
             "Pikmin gélido" -> R.drawable.ice
             else -> R.drawable.glow
-
         }
     }
 }

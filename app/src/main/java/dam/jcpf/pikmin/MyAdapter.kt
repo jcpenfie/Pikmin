@@ -8,9 +8,10 @@ import dam.jcpf.pikmin.databinding.CharacterItemBinding
 class MyAdapter(
     private val characterList: List<CharacterPikmin>,
     private val onClick: (CharacterPikmin) -> Unit
-): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = CharacterItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            CharacterItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
@@ -23,8 +24,9 @@ class MyAdapter(
     }
 
     // Para el grid
-    inner class MyViewHolder (private val binding: CharacterItemBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bin (character: CharacterPikmin){
+    inner class MyViewHolder(private val binding: CharacterItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bin(character: CharacterPikmin) {
             binding.chracterName.text = character.name
             binding.characterImage.setImageResource(character.getImage())
 

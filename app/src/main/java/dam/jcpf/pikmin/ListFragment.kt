@@ -31,7 +31,11 @@ class ListFragment : Fragment() {
         binding.pikminRecyclerview.adapter =
             MyAdapter(loadCharacterFromJson()) { seletedCharacter ->
                 // Toast para cuando se selecciona un pikmin
-                Toast.makeText(requireContext(), "Se ha seleccionado el Pikmin ${seletedCharacter.type}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "${getString(R.string.pikminSelected)} ${seletedCharacter.type}",
+                    Toast.LENGTH_SHORT
+                ).show()
 
                 val bundle = Bundle()
                 bundle.putInt("image", seletedCharacter.getImage())

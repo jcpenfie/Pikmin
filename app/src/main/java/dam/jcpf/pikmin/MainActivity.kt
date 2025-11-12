@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // SnackBar de bienvenida
-        Snackbar.make(binding.root, "¡Bienvenidos al mundo Pikmin!", Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, R.string.welcome, Snackbar.LENGTH_SHORT).show()
 
         // Configurar toolbar como ActionBar
         setSupportActionBar(binding.toolbar)
@@ -33,12 +33,12 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.listFragment -> {
-                    supportActionBar?.title = "Pikmin"
+                    supportActionBar?.title = getString(R.string.app_name)
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
 
                 R.id.detailsFragment -> {
-                    supportActionBar?.title = "Detalle Pikmin"
+                    supportActionBar?.title = getString(R.string.detailTitle)
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 }
             }
@@ -63,9 +63,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.menu_acercaDe -> {
             AlertDialog.Builder(this)
-                .setTitle("Acerca De...")
-                .setMessage("Aplicación desarrollada por Juan Carlos Peña Fierro. Versión 1.0.")
-                .setPositiveButton("OK", null)
+                .setTitle(R.string.acerca_de)
+                .setMessage(R.string.acerca_de_message)
                 .show()
             true
         }
