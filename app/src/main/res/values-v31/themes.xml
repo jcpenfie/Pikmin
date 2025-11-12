@@ -5,5 +5,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:windowSplashScreenBackground">@color/greenSplash</item>
+        <item name="android:fontFamily">@font/katana</item>
+        <item name="fontFamily">@font/katana</item>
     </style>
 </resources>

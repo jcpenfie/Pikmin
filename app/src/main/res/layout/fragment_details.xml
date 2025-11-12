@@ -2,65 +2,52 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="@dimen/l">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            style="@style/imageDetail"
             android:contentDescription="@string/character_image"
-            android:src="@drawable/red"
-            android:layout_gravity="center"
-            />
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/type"
-            android:gravity="center"
+            style="@style/DetailTitlesPrin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pikmin_type"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:layout_marginBottom="15dp"
-            />
+            android:text="@string/pikmin_type" />
 
         <TextView
             android:id="@+id/title_description"
+            style="@style/DetailTitles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_description"
-            android:textStyle="bold"
-            android:layout_marginVertical="10dp"
-            android:textSize="25sp"/>
+            android:text="@string/title_description" />
+
         <TextView
             android:id="@+id/description"
+            style="@style/DetailText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/descripcion"
-            android:layout_marginVertical="10dp"
-            android:layout_marginStart="10dp"
-            android:textSize="20sp"/>
+            android:text="@string/descripcion" />
 
         <TextView
             android:id="@+id/title_skills"
+            style="@style/DetailTitles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_skills"
-            android:textStyle="bold"
-            android:layout_marginVertical="10dp"
-            android:textSize="25sp"/>
+            android:text="@string/title_skills" />
+
         <TextView
             android:id="@+id/skills"
+            style="@style/DetailText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/skills"
-            android:layout_marginVertical="10dp"
-            android:layout_marginStart="10dp"
-            android:textSize="20sp"/>
-
+            android:text="@string/skills" />
     </LinearLayout>
 </ScrollView>

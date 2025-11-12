@@ -1,41 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
+    style="@style/cardView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
-    android:background="@color/transparent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        style="@style/linearLayoutCharItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="8dp"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/characterImage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:contentDescription="@string/character_image"
-            android:src="@drawable/red"
-            android:layout_margin="6dp"/>
+            style="@style/imageCharItem"
+            android:contentDescription="@string/character_image" />
 
         <TextView
             android:id="@+id/chracter_name"
+            style="@style/charName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pikmin_name"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginBottom="14sp"/>
-
+            android:text="@string/pikmin_name" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

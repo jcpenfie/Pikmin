@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // Activity Main
+
+
+    // Character Item
+    <style name="cardView">
+        <item name="android:layout_margin">8dp</item>
+        <item name="background">@color/transparent</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+    <style name="linearLayoutCharItem">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="imageCharItem">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:src">@drawable/ic_launcher_background</item>
+    </style>
+    <style name="charName">
+        <item name="android:layout_marginBottom">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    // Fragment Detail
+    <style name="imageDetail">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="DetailTitlesPrin">
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="DetailTitles">
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DetailText">
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
