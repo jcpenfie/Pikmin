@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_description">Description</string>
+    <string name="title_skills">Skills</string>
+    <string name="acerca_de">About…</string>
+    <string name="ajustes">Settings</string>
+    <string name="acerca_de_message">Application developed by Juan Carlos Peña Fierro. Version 1.0.</string>
+    <string name="welcome">Welcome to the world of Pikmin!</string>
+    <string name="pikminSelected">Pikmin has been selected</string>
+    <string name="pikminRojo">Red Pikmin</string>
+    <string name="pikminAmarillo">Yellow Pikmin</string>
+    <string name="pikminAzul">Blue Pikmin</string>
+    <string name="pikminBlanco">White Pikmin</string>
+    <string name="pikminMorado">Purple Pikmin</string>
+    <string name="pikminRock">Rock Pikmin</string>
+    <string name="pikminWing">Winged Pikmin</string>
+    <string name="pikminIce">Ice Pikmin</string>
+    <string name="pikminGlow">Glow Pikmin</string>
+    <string name="tema_claro_oscuro">Light/Dark Theme</string>
+    <string name="cambiar_idioma_ingl_s_espa_ol">Change language English/Spanish</string>
+</resources>
