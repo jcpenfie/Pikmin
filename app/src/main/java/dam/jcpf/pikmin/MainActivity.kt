@@ -1,6 +1,9 @@
 package dam.jcpf.pikmin
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.snackbar.Snackbar
@@ -28,11 +31,12 @@ class MainActivity : AppCompatActivity() {
 
         // Cambio el título según el destino
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            when(destination.id){
+            when (destination.id) {
                 R.id.listFragment -> {
                     supportActionBar?.title = "Pikmin"
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
+
                 R.id.detailsFragment -> {
                     supportActionBar?.title = "Detalle Pikmin"
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -48,5 +52,27 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
+    // Añado el menú
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
 
+    // Listener de los items del menu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.menu_acercaDe -> {
+            AlertDialog.Builder(this)
+                .setTitle("Acerca De...")
+                .setMessage("Aplicación desarrollada por Juan Carlos Peña Fierro. Versión 1.0.")
+                .setPositiveButton("OK", null)
+                .show()
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
 }
+
