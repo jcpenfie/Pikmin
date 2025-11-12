@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph2"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/AjustFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="dam.jcpf.pikmin.FirstFragment"
+        android:id="@+id/AjustFragment"
+        android:name="dam.jcpf.pikmin.AjustFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first"/>
+        tools:layout="@layout/fragment_ajust"/>
 </navigation>

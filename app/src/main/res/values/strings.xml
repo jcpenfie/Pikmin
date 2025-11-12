@@ -67,4 +67,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="tema_claro_oscuro">Tema Claro/Oscuro</string>
+    <string name="cambiar_idioma_ingl_s_espa_ol">Cambiar idioma Inglés/Español</string>
 </resources>

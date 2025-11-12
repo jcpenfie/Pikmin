@@ -1,5 +1,6 @@
 package dam.jcpf.pikmin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -69,9 +70,17 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        else -> {
-            super.onOptionsItemSelected(item)
+        R.id.menu_ajustes -> {
+            // Navegar a la segunda actividad
+            val intent = Intent(this, Ajustes::class.java)
+            startActivity(intent)
+            true
         }
+        android.R.id.home -> {
+            onBackPressedDispatcher.onBackPressed()
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
     }
 }
 
