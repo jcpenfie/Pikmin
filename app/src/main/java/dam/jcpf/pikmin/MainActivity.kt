@@ -1,14 +1,20 @@
 package dam.jcpf.pikmin
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.os.LocaleListCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.snackbar.Snackbar
 import dam.jcpf.pikmin.databinding.ActivityMainBinding
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +22,21 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Obtener los prefs
+        val prefs = getSharedPreferences("ajustes", MODE_PRIVATE)
+        val temaOscuro = prefs.getBoolean("temaOscuro", false)
+        val idioma = prefs.getString("idioma", "es")?: "es"
+
+        if (temaOscuro) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
+        // Aplicar idioma
+        val locales = LocaleListCompat.forLanguageTags(idioma)
+        AppCompatDelegate.setApplicationLocales(locales)
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -76,10 +97,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             true
         }
+
         android.R.id.home -> {
             onBackPressedDispatcher.onBackPressed()
             true
         }
+
         else -> super.onOptionsItemSelected(item)
     }
 }

@@ -10,12 +10,12 @@
         android:id="@+id/languaje_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cambiar_idioma_ingl_s_espa_ol" />
+        android:text="@string/textoLenguaje" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/tema_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tema_claro_oscuro" />
+        android:text="@string/temaOscuro" />
 
 </LinearLayout>

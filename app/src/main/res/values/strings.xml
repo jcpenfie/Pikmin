@@ -13,7 +13,7 @@
     <string name="acerca_de_message">Aplicación desarrollada por Juan Carlos Peña Fierro. Versión 1.0.</string>
     <string name="welcome">¡Bienvenidos al mundo Pikmin!</string>
     <string name="pikminSelected">Se ha seleccionado el Pikmin</string>
-    <string name="detailTitle" translatable="false">Detalle Pikmin</string>
+    <string name="detailTitle">Detalle Pikmin</string>
     <string name="pikminRojo">Pikmin Rojo</string>
     <string name="pikminAmarillo">Pikmin Amarillo</string>
     <string name="pikminAzul">Pikmin Azul</string>
@@ -24,6 +24,8 @@
     <string name="pikminIce">Pikmin gélido</string>
     <string name="pikminGlow">Pikmin Luminoso</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="tema_claro_oscuro">Tema Claro/Oscuro</string>
-    <string name="cambiar_idioma_ingl_s_espa_ol">Cambiar idioma Inglés/Español</string>
+    <string name="temaOscuro">Tema Oscuro</string>
+    <string name="first_fragment_label" translatable="false">first fragment</string>
+    <string name="textoLenguaje">English</string>
+    <string name="temaClaro">Tema Claro</string>
 </resources>
