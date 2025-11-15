@@ -19,11 +19,20 @@ class MyAdapter(
         holder.bin(characterList[position])
     }
 
+    /**
+     * Devuelve el número total de Pikminis que hay en la lista
+     *
+     * @return Devuelve un Int
+     */
     override fun getItemCount(): Int {
         return characterList.size
     }
 
-    // Para el grid
+    /**
+     * Aquí inflamos los cards de la vista ActivityMain para mostrar los datos de los Pikmins
+     *
+     * @params binding del layout donde está la card de los pikmins del activityMain
+     */
     inner class MyViewHolder(private val binding: CharacterItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bin(character: CharacterPikmin) {

@@ -1,20 +1,16 @@
 package dam.jcpf.pikmin
 
 import android.content.Intent
-import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.os.LocaleListCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.snackbar.Snackbar
 import dam.jcpf.pikmin.databinding.ActivityMainBinding
-import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -74,14 +70,24 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
-    // Añado el menú
+    /**
+     * Aquí inflamos el menú que va a estar en el Toolbar de la App
+     *
+     * @params menu que he creado con las opcines "Acerca de..." y "Ajustes"
+     * @return `true` se ha inflado correctamente
+     */
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
         return true
     }
 
-    // Listener de los items del menu
+    /**
+     * Listener de los items del menu
+     *
+     * @params item del menú clickado
+     * @return `true` se ha capturado correctamente
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.menu_acercaDe -> {
             AlertDialog.Builder(this)
